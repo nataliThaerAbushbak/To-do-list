@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package todolistdimo;
+package todolistdemo;
 
 /**
  *
  * @author msi
  */
-public class ToDoListDimo {
+public class ToDoListDemo {
 
     /**
      * @param args the command line arguments
