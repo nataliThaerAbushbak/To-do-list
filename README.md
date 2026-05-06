@@ -1,10 +1,10 @@
 # Java To-Do List
 
-This project is a console-based To-Do List application developed using Java. The main objective of the project is to demonstrate the implementation of fundamental object-oriented programming concepts and custom data structures through a practical task management system.
+This project is a console-based To-Do List application developed using Java. The project was created to demonstrate the implementation of object-oriented programming concepts and custom data structures through a simple task management system.
 
-The application allows users to create and manage tasks dynamically using a custom singly linked list implementation rather than Java’s built-in collection classes. Each task is assigned a unique identifier and can be searched, updated, displayed, or removed from the list.
+The application allows users to create and manage tasks dynamically using a custom singly linked list implementation rather than relying on Java’s built-in collection frameworks. Each task is assigned a unique identifier and can be searched, updated, displayed, or removed from the list.
 
-The project was developed as an academic programming exercise to strengthen understanding of linked lists, node manipulation, object-oriented design, and basic data management operations. :contentReference[oaicite:0]{index=0}
+The project was developed as an academic programming exercise to strengthen understanding of linked lists, node manipulation, traversal operations, and object-oriented software design.
 
 ---
 
@@ -35,18 +35,19 @@ The project was developed as an academic programming exercise to strengthen unde
 The project consists of two main classes:
 
 ### `ToDoList.java`
-Implements the core logic of the application using a custom linked list structure.  
-This class contains:
 
-- Task node definition
-- Task insertion
-- Task deletion
-- Search operations
-- Status management
-- Traversal operations
+Implements the core logic of the application using a custom linked list structure. This class contains the main task management operations including:
+
+- Adding tasks
+- Deleting tasks
+- Searching for tasks
+- Updating task status
+- Displaying completed and uncompleted tasks
+- Traversing the linked list
 
 ### `ToDoListDemo.java`
-Contains the `main` method used to test and demonstrate the functionality of the application by creating tasks and performing different operations on the list. :contentReference[oaicite:1]{index=1}
+
+Contains the `main` method used to test and demonstrate the functionality of the application by creating tasks and performing different operations on the list.
 
 ---
 
@@ -67,8 +68,7 @@ This project applies several important programming concepts, including:
 
 ## How the System Works
 
-Each task is represented as a node in a singly linked list.  
-Every node stores:
+Each task is represented as a node in a singly linked list. Every node stores:
 
 - Task name
 - Task ID
@@ -77,7 +77,7 @@ Every node stores:
 
 When a new task is added, the application automatically generates an incremental ID and inserts the task at the end of the list.
 
-The system also allows tasks to be searched using their ID and enables the user to update the completion status of any task. Completed and uncompleted tasks can be displayed separately through traversal operations.
+The system allows tasks to be searched using their ID and enables the user to update the completion status of any task. Completed and uncompleted tasks can also be displayed separately through traversal operations.
 
 ---
 
@@ -87,7 +87,14 @@ The application demonstrates operations such as:
 
 ```java
 list.addTask("Go to work");
-```text
+list.search(3);
+list.changeStat(3, false);
+list.completedTasks();
+list.uncompletedTasks();
+```
+
+---
+
 ## Purpose of the Project
 
 The purpose of this project is to provide practical experience in implementing data structures manually and applying object-oriented programming principles in Java.
@@ -96,6 +103,8 @@ Instead of relying on Java collection frameworks, the project focuses on buildin
 
 The project also demonstrates how basic task management functionality can be implemented using traversal, insertion, deletion, and search algorithms.
 
+---
+
 ## How to Run
 
 1. Download or clone the repository.
@@ -103,10 +112,8 @@ The project also demonstrates how basic task management functionality can be imp
 3. Compile and run `ToDoListDemo.java`.
 4. The console will display the output of the implemented operations.
 
+---
+
 ## Academic Context
 
 This project was developed as part of academic practice in Java programming and data structures. It focuses on strengthening understanding of linked list implementation, algorithmic thinking, and object-oriented software design through a simple real-world application.
-```
-list.search(3);
-list.changeStat(3, false);
-list.completedTasks();
